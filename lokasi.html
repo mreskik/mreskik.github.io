@@ -12,8 +12,6 @@
 <p id="latitude"></p>
 <p id="longitude"></p>
 <script>
-  
-</script>
 $("#get-location").click(() => {
   if (!navigator.geolocation)
     return alert("Geolocation is not supported.");
@@ -23,6 +21,8 @@ $("#get-location").click(() => {
     $("#longitude").html(`Longitude: ${position.coords.longitude}`);
   });
 });
+</script>
+
 
 </body>
 </html>
