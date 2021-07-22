@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<button id="get-location">Get Location</button>
+
+<p id="latitude"></p>
+<p id="longitude"></p>
+<script>
+  
+</script>
+$("#get-location").click(() => {
+  if (!navigator.geolocation)
+    return alert("Geolocation is not supported.");
+
+  navigator.geolocation.getCurrentPosition((position) => {
+    $("#latitude").html(`Latitude: ${position.coords.latitude}`);
+    $("#longitude").html(`Longitude: ${position.coords.longitude}`);
+  });
+});
+
+</body>
+</html>
