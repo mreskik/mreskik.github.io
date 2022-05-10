@@ -10,6 +10,7 @@ var settings = {
   "method": "POST",
   "timeout": 0,
   "headers": {
+    "Referer": "https://eform.bankjatim.co.id/",
     "User-Agent": "JatimPresences/1 CFNetwork/1331.0.7 Darwin/21.4.0",
     "Content-Type": "multipart/form-data;boundary=Jy6WN1zwtcVcaFbzlKNwR-3XQZCn4vwdCVp_nECK2VptoaiXBIMYIPrwQt.YJHaMrxhccB",
     "Authorization": "Basic QmFua0phdGltOkI0bmtKNHQhbQ=="
